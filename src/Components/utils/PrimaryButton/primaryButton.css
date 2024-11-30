@@ -1,0 +1,9 @@
+.primary-button {
+    padding: 12px 24px;
+    font-size: 14px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background-color: #9350ff;
+    color: white;
+}
