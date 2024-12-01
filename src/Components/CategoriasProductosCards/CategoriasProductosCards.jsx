@@ -8,7 +8,7 @@ const CategoriasProductosCards = ({title, bgImage}) => {
             backgroundSize: 'cover',
             backgroundPosition: 'left' 
         }}>
-            <div class="card-text">
+            <div className="card-text">
                 <h3>{title}</h3>
                 <a href="#">Contáctanos <span>▼</span></a>
             </div>

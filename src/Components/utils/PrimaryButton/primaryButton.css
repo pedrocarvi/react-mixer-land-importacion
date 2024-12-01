@@ -6,4 +6,6 @@
     outline: none;
     background-color: #9350ff;
     color: white;
+    cursor: pointer;
+    text-align: center;
 }

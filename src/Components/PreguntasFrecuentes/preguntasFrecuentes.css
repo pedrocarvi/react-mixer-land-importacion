@@ -1,0 +1,26 @@
+.faqs-ctn {
+    margin: 50px 0px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.faqs-title {
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.faqs-title span , .faqs-title h3 {
+    text-align: center;
+}
+
+.faqs-acordeon {
+    width: 700px;
+    max-width: 700px;
+}

@@ -1,0 +1,78 @@
+.form-contacto-ctn {
+    margin: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.form-contacto-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    max-width: 600px;
+}
+
+.form-contacto-title h3 {
+    text-align: center;
+    font-size: 32px;
+}
+
+.form-contacto-title h3 span {
+    color: #9350ff;
+}
+
+.form-contacto-title p {
+    text-align: center;
+}
+
+.form-contacto-form {
+    width: 100%;
+    max-width: 620px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+    margin: 10px 0px;
+}
+
+.form-contacto-form .input-ctn {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 6px;
+    width: 100%;
+}
+
+.form-contacto-form .input-ctn label {
+    font-size: 14px;
+
+}
+
+.form-contacto-form .input-ctn input, .form-contacto-form .input-ctn textarea, .form-contacto-form .input-ctn select {
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.form-contacto-form .input-ctn textarea {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-contacto-btn{
+    margin: 20px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.form-contacto-btn a {
+    width: 100%;
+}

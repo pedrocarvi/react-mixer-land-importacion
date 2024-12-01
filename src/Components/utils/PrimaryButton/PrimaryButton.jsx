@@ -1,12 +1,20 @@
 import React from 'react';
-import './primaryButton.css'
+import './primaryButton.css';
 
-const PrimaryButton = ({title, link}) => {
-    return(
-        <a href={link} className='primary-button'>
-            {title}
-        </a>
-    )
-}
+const PrimaryButton = ({ type, title, link }) => {
+  if (type) {
+    return (
+      <button className="primary-button" type={type}>
+        {title}
+      </button>
+    );
+  }
+
+  return (
+    <a href={link} className="primary-button">
+      {title}
+    </a>
+  );
+};
 
 export default PrimaryButton;
