@@ -1,3 +1,5 @@
+@import url(../../variables.css);
+
 .faqs-ctn {
     margin: 50px 0px; 
     display: flex;
@@ -18,9 +20,14 @@
 
 .faqs-title span , .faqs-title h3 {
     text-align: center;
+    color: var(--dark-text-color);
 }
 
 .faqs-acordeon {
     width: 700px;
     max-width: 700px;
+}
+
+.faqs-acordeon p {
+    color: var(--dark-text-color);
 }

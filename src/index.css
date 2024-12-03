@@ -1,3 +1,5 @@
+@import url(./variables.css);
+
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +15,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   max-width: 1200px;
   margin: 0 auto;
+  background-color: var(--dark-color);
 }
 
 code {

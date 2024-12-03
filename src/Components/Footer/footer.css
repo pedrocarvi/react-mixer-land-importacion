@@ -24,5 +24,6 @@
 
 .footer-ctn .footer-copyright p {
     font-size: 14px;
+    color: var(--dark-text-color);
 }
 

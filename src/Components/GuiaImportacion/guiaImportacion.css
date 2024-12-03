@@ -1,3 +1,5 @@
+@import url(../../variables.css);
+
 .guia-importacion-ctn {
     display: flex;
     justify-content: center;
@@ -17,8 +19,13 @@
     gap: 12px;
 }
 
+.guia-importacion-ctn h2 {
+    color: var(--dark-text-color);    
+}
+
 .guia-importacion-ctn p {
     font-size: 15px;
+    color: var(--dark-text-color);
 }
 
 .guia-importacion-ctn .guia-importacion-btns {
@@ -56,7 +63,7 @@
 
 .acordeon-header h3 {
     margin: 0;
-    color: #9350ff;
+    color: var(--dark-text-color);
 }
 
 .acordeon-header span {
@@ -71,5 +78,5 @@
 }
 
 .activo .acordeon-header {
-    background-color: #f5f5f5;
+    background-color: var(--dark-secondary-color);
 }

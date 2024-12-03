@@ -1,3 +1,5 @@
+@import url(../../variables.css);
+
 .form-contacto-ctn {
     margin: 50px 0px;
     display: flex;
@@ -19,6 +21,7 @@
 .form-contacto-title h3 {
     text-align: center;
     font-size: 32px;
+    color: var(--dark-text-color);
 }
 
 .form-contacto-title h3 span {
@@ -27,6 +30,7 @@
 
 .form-contacto-title p {
     text-align: center;
+    color: var(--dark-text-color);
 }
 
 .form-contacto-form {
@@ -51,7 +55,7 @@
 
 .form-contacto-form .input-ctn label {
     font-size: 14px;
-
+    color: var(--dark-text-color);
 }
 
 .form-contacto-form .input-ctn input, .form-contacto-form .input-ctn textarea, .form-contacto-form .input-ctn select {

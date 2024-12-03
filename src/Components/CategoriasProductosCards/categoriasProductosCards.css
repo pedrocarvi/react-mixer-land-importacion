@@ -1,15 +1,17 @@
+@import url(../../variables.css);
+
 .card {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    background-color: #ededed;
-    border: 1px solid #A2A2A2;
+    background-color: var(--dark-secondary-color);
+    border: 1px solid #4e4e4e;
     border-radius: 16px;
     padding: 20px;
     width: 350px;
     max-width: 100%;
-    color: black;
+    color: var(--dark-text-color);
     transition: transform 0.3s, box-shadow 0.3s;
     min-height: 180px;
 }

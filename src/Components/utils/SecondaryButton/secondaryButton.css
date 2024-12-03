@@ -1,3 +1,5 @@
+@import url(../../../variables.css);
+
 .secondary-button {
     padding: 12px 24px;
     font-size: 14px;
@@ -5,5 +7,5 @@
     border: none;
     outline: none;
     border: 1px solid #9350ff;
-    color: black;
+    color: var(--dark-text-color);
 }
