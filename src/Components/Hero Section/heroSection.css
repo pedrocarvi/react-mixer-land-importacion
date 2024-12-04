@@ -51,3 +51,35 @@
     border-radius: 8px; 
     gap: 12px;
 }
+
+@media screen and (max-width: 768px) {
+    .hero-section-ctn {
+        min-height: 400px;
+        padding: 20px; 
+        margin-top: 15px;
+    }
+    .hero-section-subctn {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+    .first-column h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+    .first-column p {
+        text-align: center;
+    }
+    .second-column img {
+        width: 200px;
+    }
+    .first-column-btns {
+        display: flex;
+        flex-direction: column;
+    }
+    .first-column-btns .primary-button,
+    .first-column-btns .secondary-button {
+        width: 100%;
+        max-width: 300px;
+    }
+}

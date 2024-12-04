@@ -31,3 +31,14 @@
 .faqs-acordeon p {
     color: var(--dark-text-color);
 }
+
+@media screen and (max-width: 768px) {
+    .faqs-ctn {
+        margin: 0px 0px;
+        padding: 20px;
+    }
+    .faqs-acordeon {
+        width: 100%;
+        max-width: 500px;
+    }
+}

@@ -8,4 +8,5 @@
     outline: none;
     border: 1px solid #9350ff;
     color: var(--dark-text-color);
+    text-align: center;
 }

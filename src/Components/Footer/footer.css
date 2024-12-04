@@ -27,3 +27,18 @@
     color: var(--dark-text-color);
 }
 
+
+@media screen and (max-width: 768px) {
+    .footer-ctn {
+        margin-top: 30px;
+        padding: 20px;
+    }
+    .footer-copyright {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 15px;
+    }
+    .footer-ctn .footer-copyright p {
+        text-align: center;
+    }
+}

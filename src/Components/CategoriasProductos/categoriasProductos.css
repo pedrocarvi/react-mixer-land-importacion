@@ -23,3 +23,13 @@
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
+
+@media screen and (max-width: 768px) {
+    .categorias-productos-ctn {
+        padding: 20px;
+        margin-top: 0px;
+    }
+    .categorias-productos-title h2 {
+        text-align: center;
+    }
+}

@@ -80,3 +80,29 @@
 .activo .acordeon-header {
     background-color: var(--dark-secondary-color);
 }
+
+@media screen and (max-width: 768px) {
+    .guia-importacion-ctn {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 20px;
+        margin: 0px 0px;
+    }
+    .guia-importacion-ctn h2 {
+       text-align: center;  
+       font-size: 24px;
+    }
+    
+    .guia-importacion-ctn p {
+        text-align: center;
+    }
+    .guia-importacion-ctn .guia-importacion-btns {
+        display: flex;
+        flex-direction: column;
+    }
+    .acordeon-contenido p{
+        text-align: start;
+        font-size: 16px;
+    }
+}
