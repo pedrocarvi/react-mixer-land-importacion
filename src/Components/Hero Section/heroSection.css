@@ -1,4 +1,4 @@
-@import url(../../variables.css);
+/* @import url(../../variables.css);
 
 .hero-section-ctn {
     display: flex;
@@ -82,4 +82,69 @@
         width: 100%;
         max-width: 300px;
     }
+} */
+
+.hero-section-ctn {
+    min-height: 650px;
+    width: 100%;
+    background-image: url(../../assets/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 0px 30px 30px;
+    position: relative;
+    top: -100px;
+    z-index: 1;
+    overflow: hidden; 
+}
+
+.hero-section-ctn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2; 
+    border-radius: inherit; 
+}
+
+.hero-section-ctn > * {
+    position: relative;
+    z-index: 3; 
+}
+
+.hero-section-subctn {
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero-section-subctn h1, .hero-section-subctn p {
+    text-align: center;
+}
+
+.hero-section-ctn .hero-section-subctn h1 {
+    font-size: 48px;
+    color: #FAFAFA;
+}
+
+.hero-section-ctn .hero-section-subctn p {
+    font-size: 22px;
+    color: #FAFAFA;
+    max-width: 700px;
+}
+
+.hero-section-subctn .first-column-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
 }

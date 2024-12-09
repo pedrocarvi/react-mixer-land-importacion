@@ -2,6 +2,8 @@
 
 .categorias-productos-ctn {
     width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
     min-height: 500px;
     margin-top: 40px;
 }
@@ -13,6 +15,16 @@
     align-items: center;
     gap: 10px;
     color: var(--dark-text-color);
+}
+
+.categorias-productos-title span {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.categorias-productos-title h2 {
+    font-size: 32px;
 }
 
 .categorias-productos-cards {

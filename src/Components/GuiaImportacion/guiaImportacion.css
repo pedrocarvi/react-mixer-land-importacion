@@ -1,11 +1,13 @@
 @import url(../../variables.css);
 
 .guia-importacion-ctn {
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto;
     display: flex;
     justify-content: center;
     align-items: start;
     gap: 40px;
-    margin: 40px 0px;
 }
 
 .guia-importacion-ctn .first-col,

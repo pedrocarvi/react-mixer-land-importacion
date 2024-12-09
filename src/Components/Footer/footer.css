@@ -1,5 +1,8 @@
 .footer-ctn {
     margin-top: 80px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .footer-ctn .footer-logo-social {

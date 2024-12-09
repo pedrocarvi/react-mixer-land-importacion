@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './formularioContacto.css';
 import PrimaryButton from '../utils/PrimaryButton/PrimaryButton';
+import { countries } from '../utils/countries';
 
 const FormularioContacto = () => {
 
@@ -79,7 +80,7 @@ const FormularioContacto = () => {
                     name="nombreCompleto"
                     value={formData.nombreCompleto}
                     onChange={handleChange}
-                    placeholder="Ej: Elon Musk"
+                    placeholder="Ingresá tu nombre"
                     required
                     />
                 </div>
@@ -91,7 +92,7 @@ const FormularioContacto = () => {
                     name="correoElectronico"
                     value={formData.correoElectronico}
                     onChange={handleChange}
-                    placeholder="Ej: elonmusk@gmail.com"
+                    placeholder="Ingresá tu email"
                     required
                     />
                 </div>
@@ -105,7 +106,7 @@ const FormularioContacto = () => {
                     name="celularWhatsapp"
                     value={formData.celularWhatsapp}
                     onChange={handleChange}
-                    placeholder="Ej: 54 9 11 2233 4455"
+                    placeholder="Ingresá tu nro. de celular"
                     required
                     />
                 </div>
@@ -131,22 +132,24 @@ const FormularioContacto = () => {
                     name="nombreNegocio"
                     value={formData.nombreNegocio}
                     onChange={handleChange}
-                    placeholder="Ej: Space X"
+                    placeholder="Ingresá el nombre de tu empresa"
                     />
                 </div>
                 <div className='input-ctn'>
                     <label htmlFor="paisImportar">¿Desde qué país deseas importar? *</label>
                     <select
-                    id="paisImportar"
-                    name="paisImportar"
-                    value={formData.paisImportar}
-                    onChange={handleChange}
-                    required
-                    >
-                        <option value="Afganistán">Afganistán</option>
-                        <option value="Argentina">Argentina</option>
-                        <option value="Brasil">Brasil</option>
-                    </select>
+                        id="paisImportar"
+                        name="paisImportar"
+                        value={formData.paisImportar}
+                        onChange={handleChange}
+                        required
+                        >
+                        {countries.map((country) => (
+                            <option key={country} value={country}>
+                            {country}
+                            </option>
+                        ))}
+                        </select>
                 </div>
             </div>
             <div className="form-row forth-row">

@@ -17,7 +17,7 @@ function App() {
       <CategoríasProductos/>
       <GuiaImportacion/>
       <FormularioContacto/>
-      <PreguntasFrecuentes/>
+      {/* <PreguntasFrecuentes/> */}
       <Footer/>
     </div>
   );

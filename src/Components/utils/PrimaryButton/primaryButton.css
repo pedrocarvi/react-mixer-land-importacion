@@ -8,4 +8,10 @@
     color: white;
     cursor: pointer;
     text-align: center;
+    transition: all ease-in-out 200ms;
+}
+
+.primary-button:hover {
+    background-color: #FAFAFA;
+    color: #000000;
 }

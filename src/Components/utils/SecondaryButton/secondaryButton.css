@@ -9,4 +9,12 @@
     border: 1px solid #9350ff;
     color: var(--dark-text-color);
     text-align: center;
+    cursor: pointer;
+    transition: all ease-in-out 200ms;
+}
+
+.secondary-button:hover {
+    background-color: #FAFAFA;
+    color: #9350ff;
+    border: 1px solid #9350ff;
 }

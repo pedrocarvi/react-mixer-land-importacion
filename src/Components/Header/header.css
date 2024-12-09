@@ -2,11 +2,15 @@
 
 .header-ctn {
     width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
     max-height: 100px;
     padding: 12px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    z-index: 10;
 }
 
 .logo-container {
@@ -34,6 +38,14 @@ ul {
 ul li {
     font-size: 14px;
     color: var(--dark-text-color);
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all ease-in-out 200ms;
+}
+
+ul li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 

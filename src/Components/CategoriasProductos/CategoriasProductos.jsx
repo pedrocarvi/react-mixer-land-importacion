@@ -3,7 +3,7 @@ import './categoriasProductos.css';
 import CategoriasProductosCards from '../CategoriasProductosCards/CategoriasProductosCards.jsx';
 import CatGamingImg from '../../assets/cat-gaming.webp';
 import CatConstrucciónImg from '../../assets/cat-construccion.webp';
-import CatMaquinariaImg from '../../assets/cat-maquinaria.webp';
+import CatMaquinariaImg from '../../assets/cat-maquinaria-byn.webp';
 import CatPanelesImg from '../../assets/cat-paneles.webp';
 import CatPesasImg from '../../assets/cat-pesas.webp';
 import CatVigilancia from '../../assets/cat-vigilancia.webp';
@@ -28,7 +28,7 @@ const CategoríasProductos = () => {
             <div className="categorias-productos-cards">
                 {categorias.map((categoria, index) => (
                     <CategoriasProductosCards
-                        key={index} // Cada tarjeta debe tener una key única
+                        key={index} 
                         title={categoria.title}
                         bgImage={categoria.bgImage}
                     />
