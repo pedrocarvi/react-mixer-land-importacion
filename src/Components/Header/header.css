@@ -33,6 +33,12 @@ ul {
     align-items: center;
     justify-content: center;
     gap: 25px;
+    position: relative;
+    left: 30px;
+}
+
+ul a {
+    text-decoration: none;
 }
 
 ul li {

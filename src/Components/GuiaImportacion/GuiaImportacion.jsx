@@ -53,7 +53,7 @@ const GuiaImportacion = () => {
     };
 
     return(
-        <div className='guia-importacion-ctn'>
+        <div className='guia-importacion-ctn' id='guia'>
             <div className="first-col">
                 <h2> Proceso de Importación: Tu Guía en 6 simples pasos</h2>
                 <p> Nuestro proceso está diseñado para brindarte una experiencia de importación sin complicaciones, con un apoyo constante en cada etapa del camino. Conocé cada paso a continuación:</p>

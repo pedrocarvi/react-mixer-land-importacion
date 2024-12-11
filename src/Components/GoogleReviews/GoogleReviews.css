@@ -1,0 +1,34 @@
+.section-reviews {
+    width: 100%;
+    max-width: 1300px;
+    margin: 40px auto;
+}
+
+.section-reviews-texts {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-reviews h2, .section-reviews h3, .section-reviews p {
+    color: white;
+    text-align: center;
+}
+
+.section-reviews h2 {
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.section-reviews h3 {
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.section-reviews p {
+    font-size: 16px;
+}

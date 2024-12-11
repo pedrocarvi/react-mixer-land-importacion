@@ -10,7 +10,7 @@ const CategoriasProductosCards = ({title, bgImage}) => {
         }}>
             <div className="card-text">
                 <h3>{title}</h3>
-                <a href="#">Contáctanos <span>▼</span></a>
+                <a href="#form">Contáctanos <span>▼</span></a>
             </div>
         </div>
     )

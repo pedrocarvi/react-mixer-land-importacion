@@ -6,39 +6,39 @@ const PreguntasFrecuentes = () => {
     const secciones = [
         {
             id: 1,
-            titulo: "01 Contacto Inicial",
+            titulo: "¿Por qué elegir Mixerport Importaciones?",
             contenido:
-                "Contacta con nosotros para enviar la información de la carga que te gustaría importar. Este primer paso es crucial para entender tus necesidades específicas de importación.",
+                "En Mixerport Importaciones llevamos más de 15 años acompañando a empresas y personas en el camino de importar productos desde cualquier parte del mundo. Nos encargamos de todo el proceso, desde la compra hasta la entrega en tus manos, brindándote tranquilidad incluso en contextos económicos desafiantes.",
         },
         {
             id: 2,
-            titulo: "02 Análisis y Clasificación",
+            titulo: "¿Cómo se determinan los plazos de entrega?",
             contenido:
-                "Clasificamos los productos y país de procedencia. Nuestro equipo experto se encarga de categorizar correctamente tu mercancía para asegurar un proceso sin contratiempos.",
+                "Los tiempos de entrega dependen de factores como el país de origen, los tiempos del proveedor o tienda, y las condiciones del comercio exterior en ese momento. Siempre hacemos todo lo posible para cumplir con los plazos acordados.",
         },
         {
             id: 3,
-            titulo: "03 Cotización Detallada",
+            titulo: "¿Hay costos adicionales al precio de la cotización?",
             contenido:
-                "Proporcionamos un desglose detallado de los costos asociados al proceso de importación.",
+                "No, el precio que cotizamos es final y se mantiene, ya sea en pesos o dólares, sin sorpresas ni cargos adicionales.",
         },
         {
             id: 4,
-            titulo: "04 Aceptación y Avance del Proceso",
+            titulo: "¿Puedo seguir el estado de mi pedido?",
             contenido:
-                "Tras la aceptación de la cotización, procedemos con los pasos necesarios para avanzar en el proceso de importación.",
+                "¡Por supuesto! Te mantenemos informado en todo momento con atención personalizada para que sepas exactamente dónde está tu producto.",
         },
         {
             id: 5,
-            titulo: "05 Gestión Logística y Legal",
+            titulo: "¿Qué pasa si mi producto se demora o no llega?",
             contenido:
-                "Nos encargamos del envío y la nacionalización de la mercadería. Manejamos todos los aspectos logísticos y aduaneros para que tu importación sea fluida y conforme a la ley.",
+                "Si surge algún inconveniente, nos comunicaremos contigo de inmediato para informarte y resolver la situación. Además, tenemos un plazo límite de 75 días para la entrega. Si no logramos cumplirlo, te devolvemos el dinero sin complicaciones.",
         },
         {
             id: 6,
-            titulo: "06 Acompañamiento y despacho de mercadería",
+            titulo: "¿Qué sucede si mi producto tiene una falla?",
             contenido:
-                "Contás con atención personalizada desde que inicia el proceso de importación hasta la entrega de tu mercadería. Nuestro equipo está disponible para resolver tus dudas y mantenerte informado en cada una de las etapas hasta recibir tu importación.",
+                "Te ofrecemos 2 meses de respaldo desde la entrega para que pruebes tu producto con tranquilidad. Si tiene algún problema inicial, nos ocupamos de reemplazarlo. Después de este período, la garantía queda en manos de la marca del producto.",
         },
     ];
 

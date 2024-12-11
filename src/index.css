@@ -16,7 +16,13 @@ body {
   max-width: 2000px;
   margin: 0 auto;
   background-color: var(--dark-color);
+  scroll-behavior: smooth;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

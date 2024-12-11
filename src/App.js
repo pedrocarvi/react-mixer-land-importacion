@@ -2,6 +2,7 @@ import './App.css';
 import CategoríasProductos from './Components/CategoriasProductos/CategoriasProductos';
 import Footer from './Components/Footer/Footer';
 import FormularioContacto from './Components/FormularioContacto/FormularioContacto';
+import GoogleReviews from './Components/GoogleReviews/GoogleReviews';
 import GuiaImportacion from './Components/GuiaImportacion/GuiaImportacion';
 import Header from './Components/Header/Header';
 import HeroSection from './Components/Hero Section/HeroSection';
@@ -17,7 +18,8 @@ function App() {
       <CategoríasProductos/>
       <GuiaImportacion/>
       <FormularioContacto/>
-      {/* <PreguntasFrecuentes/> */}
+      <GoogleReviews/>
+      <PreguntasFrecuentes/>
       <Footer/>
     </div>
   );

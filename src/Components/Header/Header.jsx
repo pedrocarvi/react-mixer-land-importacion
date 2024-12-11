@@ -11,14 +11,13 @@ const Header = () => {
             </div>
             <div className='menu-container'>
                 <ul>
-                    <li>Inicio</li>
-                    <li>Destacados</li>
-                    <li>Cómo comprar</li>
-                    <li>Reseñas</li>
-                    <li>FAQs</li>
+                    <a href="#destacados">  <li> Destacados </li> </a>
+                    <a href="#guia">  <li> Cómo comprar</li> </a>
+                    <a href="#resenas"> <li> Reseñas</li> </a>
+                    <a href="#faqs"> <li> FAQs</li> </a>
                 </ul>
             </div>
-            <PrimaryButton title="Asesorate ahora"/>
+            <PrimaryButton title="Asesorate ahora" link="#form"/>
         </div>
     );
 };

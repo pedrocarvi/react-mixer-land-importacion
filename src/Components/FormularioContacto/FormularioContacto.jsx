@@ -60,7 +60,7 @@ const FormularioContacto = () => {
     };
 
   return (
-    <div className='form-contacto-ctn'>
+    <div className='form-contacto-ctn' id='form'>
       <div className='form-contacto-title'>
         <h3>
           Compramos por vos y lo <br /> <span>importamos al mejor precio.</span>

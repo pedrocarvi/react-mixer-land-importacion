@@ -20,7 +20,7 @@ const CategoríasProductos = () => {
     ];
 
     return (
-        <div className='categorias-productos-ctn'>
+        <div className='categorias-productos-ctn' id='destacados'>
             <div className="categorias-productos-title">
                 <span>Categorías Destacadas</span>
                 <h2>Traemos lo que sea, sin importar el tamaño.</h2>
