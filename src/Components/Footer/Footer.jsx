@@ -11,14 +11,14 @@ const Footer = () => {
             <div className="footer-logo-social"> 
                 <img src={MixerportLogoWhite} alt="Mixerport logo" width={70}/>
                 <div className="footer-logo-socials">
-                    <WhatsAppIc width={20}/>
-                    <FacebookIc width={20}/>
-                    <InstagramIc width={20}/>
+                    <a href="https://api.whatsapp.com/send?phone=541128859227&text=Hola!%20%F0%9F%91%8B%20Me%20gustar%C3%ADa%20hacerles%20una%20consulta"> <WhatsAppIc width={20}/> </a>
+                    <a href="https://www.facebook.com/mixerportdj/?locale=es_LA" target='_blank'> <FacebookIc width={20}/> </a>
+                    <a href="https://www.instagram.com/mixerportba/" target='_blank'> <InstagramIc width={20}/> </a>
                 </div>
             </div>
             <div className="footer-copyright">
                 <p> Mixerport Importaciones 2024 | Todos los derechos reservados</p>
-                <p> Desarrollado por Astra Software </p>
+                <p> Desarrollado por <a href="https://astrasoftware.com.ar/" target='_blank'> Astra Software </a> </p>
             </div>
         </div>
     )

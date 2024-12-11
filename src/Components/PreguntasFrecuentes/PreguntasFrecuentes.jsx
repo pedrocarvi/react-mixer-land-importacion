@@ -51,7 +51,7 @@ const PreguntasFrecuentes = () => {
     };
 
     return (
-        <div className="faqs-ctn">
+        <div className="faqs-ctn" id='faqs'>
             <div className='faqs-title'>
                 <span> Preguntas frecuentes </span>
                 <h3> Respondemos todas tus dudas </h3>

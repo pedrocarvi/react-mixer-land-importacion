@@ -30,6 +30,11 @@
     color: var(--dark-text-color);
 }
 
+.footer-ctn .footer-copyright a {
+    text-decoration: underline;
+    color: #FAFAFA;
+}
+
 
 @media screen and (max-width: 768px) {
     .footer-ctn {
