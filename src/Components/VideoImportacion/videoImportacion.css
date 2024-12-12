@@ -23,6 +23,8 @@
     font-size: 32px;
     color: #FAFAFA;
     text-align: center;
+    opacity: 0;
+    animation: fadeIn 1s forwards; 
 }
 
 .video-container {
@@ -35,7 +37,16 @@
     border: 1px solid #9350ff; 
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     margin: 20px auto;
+    opacity: 0; 
+    transform: translateY(80px); 
+    transition: transform 0.5s ease, opacity 0.5s ease; 
 }
+
+.video-container.active {
+    opacity: 1; 
+    transform: translateY(0);
+}
+
 
 @media screen and (max-width: 768px) {
     .video-importacion-ctn {

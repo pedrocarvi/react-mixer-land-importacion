@@ -32,3 +32,12 @@
 .section-reviews p {
     font-size: 16px;
 }
+
+@media screen and (max-width: 768px) {
+    .section-reviews {
+        padding: 0px 16px;
+    }
+    .section-reviews h3 {
+        font-size: 24px;
+    }
+}

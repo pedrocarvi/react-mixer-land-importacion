@@ -58,7 +58,7 @@ const GuiaImportacion = () => {
                 <h2> Proceso de Importación: Tu Guía en 6 simples pasos</h2>
                 <p> Nuestro proceso está diseñado para brindarte una experiencia de importación sin complicaciones, con un apoyo constante en cada etapa del camino. Conocé cada paso a continuación:</p>
                 <div className='guia-importacion-btns'>
-                    <PrimaryButton title="Asesorate ahora"/>
+                    <PrimaryButton title="Asesorate ahora" link="#form"/>
                     <SecondaryButton title="Conocé más"/>
                 </div>
             </div>

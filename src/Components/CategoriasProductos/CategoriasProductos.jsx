@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './categoriasProductos.css';
 import CategoriasProductosCards from '../CategoriasProductosCards/CategoriasProductosCards.jsx';
 import CatGamingImg from '../../assets/cat-gaming.webp';
@@ -9,6 +9,23 @@ import CatPesasImg from '../../assets/cat-pesas.webp';
 import CatVigilancia from '../../assets/cat-vigilancia.webp';
 
 const CategoríasProductos = () => {
+    const [visibleCards, setVisibleCards] = useState([]);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const cards = document.querySelectorAll('.categorias-productos-card');
+            cards.forEach((card) => {
+                const cardTop = card.getBoundingClientRect().top;
+                if (cardTop <= window.innerHeight - 100) {
+                    card.classList.add('active');
+                }
+            });
+        };        
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, [visibleCards]);
+
     // Arreglo de categorías
     const categorias = [
         { title: "Tecnología & Electrónica", bgImage: CatGamingImg },
@@ -28,9 +45,10 @@ const CategoríasProductos = () => {
             <div className="categorias-productos-cards">
                 {categorias.map((categoria, index) => (
                     <CategoriasProductosCards
-                        key={index} 
+                        key={index}
                         title={categoria.title}
                         bgImage={categoria.bgImage}
+                        className={`categorias-productos-card ${visibleCards.includes(index) ? 'active' : ''}`}
                     />
                 ))}
             </div>

@@ -129,6 +129,8 @@
 
 .hero-section-subctn h1, .hero-section-subctn p {
     text-align: center;
+    opacity: 0;
+    animation: fadeIn 1s forwards; 
 }
 
 .hero-section-ctn .hero-section-subctn h1 {
@@ -147,4 +149,32 @@
     justify-content: center;
     align-items: center;
     gap: 16px;
+    opacity: 0;
+    animation: fadeIn 1.5s forwards; 
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero-section-ctn {
+        min-height: 550px;
+        padding: 50px 16px;
+    }
+    .hero-section-subctn {
+       position: relative;
+       top: 50px;
+    }
+    .hero-section-ctn .hero-section-subctn h1  {
+        font-size: 24px;
+    }
+    .hero-section-ctn .hero-section-subctn p  {
+        font-size: 16px;
+    }
 }

@@ -11,7 +11,7 @@ const FormularioContacto = () => {
         celularWhatsapp: '',
         rubroNegocio: '',
         nombreNegocio: '',
-        paisImportar: 'Afganistán',
+        paisImportar: 'Seleccioná tu país',
         productosImportar: '',
         consultaEspecifica: '',
     });
@@ -46,7 +46,7 @@ const FormularioContacto = () => {
             celularWhatsapp: '',
             rubroNegocio: '',
             nombreNegocio: '',
-            paisImportar: 'Afganistán',
+            paisImportar: 'Seleccioná tu país',
             productosImportar: '',
             consultaEspecifica: '',
             });

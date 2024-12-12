@@ -1,9 +1,18 @@
 @import url(../../variables.css);
 
+.header {
+    position: sticky; 
+    top: 0; 
+    width: 100%; 
+    background-color: rgba(0, 0, 0, 0.2); 
+    z-index: 1000; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
 .header-ctn {
     width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 1200px; 
+    margin: 0 auto; 
     max-height: 100px;
     padding: 12px;
     display: flex;
@@ -11,6 +20,7 @@
     align-items: center;
     position: relative;
     z-index: 10;
+    animation: fadeIn 1s forwards;
 }
 
 .logo-container {
@@ -66,7 +76,22 @@ button {
 }
 
 @media screen and (max-width: 650px) {
+    .header-ctn {
+        padding: 10px 16px;
+    }
+    .logo-container img {
+        width: 40px;
+    }
     .menu-container {
         display: none;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }

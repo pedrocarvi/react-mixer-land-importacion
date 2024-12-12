@@ -1,9 +1,9 @@
 import React from 'react';
 import './categoriasProductosCards.css'
 
-const CategoriasProductosCards = ({title, bgImage}) => {
+const CategoriasProductosCards = ({ className, title, bgImage }) => {
     return(
-        <div className="card" style={{
+        <div className={`card ${className}`}style={{
             backgroundImage: `url(${bgImage})`, 
             backgroundSize: 'cover',
             backgroundPosition: 'left' 
