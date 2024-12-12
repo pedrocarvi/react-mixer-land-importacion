@@ -53,36 +53,38 @@ const GuiaImportacion = () => {
     };
 
     return(
-        <div className='guia-importacion-ctn' id='guia'>
-            <div className="first-col">
-                <h2> Proceso de Importación: Tu Guía en 6 simples pasos</h2>
-                <p> Nuestro proceso está diseñado para brindarte una experiencia de importación sin complicaciones, con un apoyo constante en cada etapa del camino. Conocé cada paso a continuación:</p>
-                <div className='guia-importacion-btns'>
-                    <PrimaryButton title="Asesorate ahora" link="#form"/>
-                    <SecondaryButton title="Conocé más"/>
+        <div className="guia-ctn">
+            <div className='guia-importacion-ctn' id='guia'>
+                <div className="first-col">
+                    <h2> Proceso de Importación: <br/> Tu Guía en 6 simples pasos</h2>
+                    <p> Nuestro proceso está diseñado para brindarte una experiencia de importación sin complicaciones, con un apoyo constante en cada etapa del camino. Conocé cada paso a continuación:</p>
+                    <div className='guia-importacion-btns'>
+                        <PrimaryButton title="Asesorate ahora" link="#form"/>
+                        <SecondaryButton title="Conocé más"/>
+                    </div>
                 </div>
-            </div>
-            <div className="second-col">
-                <div className="acordeon">
-                    {secciones.map((seccion) => (
-                        <div
-                            key={seccion.id}
-                            className={`acordeon-item ${seccionActiva === seccion.id ? "activo" : ""}`}
-                        >
+                <div className="second-col">
+                    <div className="acordeon">
+                        {secciones.map((seccion) => (
                             <div
-                                className="acordeon-header"
-                                onClick={() => toggleSeccion(seccion.id)}
+                                key={seccion.id}
+                                className={`acordeon-item ${seccionActiva === seccion.id ? "activo" : ""}`}
                             >
-                                <h3>{seccion.titulo}</h3>
-                                <span>{seccionActiva === seccion.id ? "▲" : "▼"}</span>
-                            </div>
-                            {seccionActiva === seccion.id && (
-                                <div className="acordeon-contenido">
-                                    <p>{seccion.contenido}</p>
+                                <div
+                                    className="acordeon-header"
+                                    onClick={() => toggleSeccion(seccion.id)}
+                                >
+                                    <h3>{seccion.titulo}</h3>
+                                    <span>{seccionActiva === seccion.id ? "▲" : "▼"}</span>
                                 </div>
-                            )}
-                        </div>
-                    ))}
+                                {seccionActiva === seccion.id && (
+                                    <div className="acordeon-contenido">
+                                        <p>{seccion.contenido}</p>
+                                    </div>
+                                )}
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
         </div>
