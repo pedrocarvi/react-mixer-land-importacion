@@ -157,4 +157,7 @@
     .acordeon-header h3 {
         font-size: 16px !important;
     }
+    .acordeon-contenido p {
+        text-align: start;
+    }
 }
