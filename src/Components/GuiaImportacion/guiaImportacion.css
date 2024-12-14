@@ -5,7 +5,7 @@
     margin: 0 auto;
     background: 
         radial-gradient(circle, rgba(0, 0, 0, 0.8) 60%, rgba(0, 0, 0, 1) 100%), 
-        url(../../assets/oficina.webp);
+        url(../../assets/oficina2.jpg);
     background-size: cover; 
     background-position: center; 
     display: flex;
@@ -13,6 +13,7 @@
     align-items: center;
     margin: 40px 0px;
     min-height: 600px;
+    color: #fff;
 }
 
 .guia-importacion-ctn {
@@ -53,51 +54,68 @@
 }
 
 .acordeon {
-    width: 100%;
+    position: relative;
+    width: 90%;
+    max-width: 500px;
     margin: 0 auto;
-    font-family: 'Arial', sans-serif;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
 }
 
+.barra-vertical {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to bottom, rgb(246, 230, 255), rgba(174, 22, 255, 1));
+}
+
+
 .acordeon-item {
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-    transition: all ease-in-out 300ms;
+    position: relative;
+    margin: 1.5rem 0;
+    cursor: pointer;
+}
+
+.acordeon-item.activo .barra-vertical {
+    height: 50%; 
 }
 
 .acordeon-header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 20px 20px;
-    cursor: pointer;
+    gap: 1rem;
     font-size: 1rem;
-    font-weight: bold;
+    padding: 0.8rem 1rem;
+    background-color: #222;
+    border-radius: 5px;
+    transition: background-color 1s ease ease-in-out;
+    border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-.acordeon-header h3 {
-    margin: 0;
-    color: var(--dark-text-color);
+.acordeon-header:hover {
+    background-color: #444;
 }
 
-.acordeon-header span {
-    font-size: 0.6rem;
-    color: #9350ff;
+.icono-placeholder {
+    width: 30px;
+    height: 30px;
+    background-color: #555;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 0.8rem;
 }
 
 .acordeon-contenido {
-    padding: 15px 20px;
+    margin-left: 50px;
+    margin-top: 0.5rem;
     font-size: 0.9rem;
-    color: rgba(0, 0, 0, 0.8);
+    color: #bbb;
+    line-height: 1.4;
 }
 
-.activo .acordeon-header {
-    background-color: var(--dark-secondary-color);
-}
+
 
 @media screen and (max-width: 768px) {
     .guia-importacion-ctn {
@@ -118,9 +136,5 @@
     .guia-importacion-ctn .guia-importacion-btns {
         display: flex;
         flex-direction: column;
-    }
-    .acordeon-contenido p{
-        text-align: start;
-        font-size: 16px;
     }
 }

@@ -57,21 +57,21 @@ const PreguntasFrecuentes = () => {
                 <h3> Respondemos todas tus dudas </h3>
             </div>
             <div className="faqs-acordeon">
-                <div className="acordeon">
+                <div>
                     {secciones.map((seccion) => (
                         <div
                             key={seccion.id}
                             className={`acordeon-item ${seccionActiva === seccion.id ? "activo" : ""}`}
                         >
                             <div
-                                className="acordeon-header"
+                                className="acordeon-header-faqs"
                                 onClick={() => toggleSeccion(seccion.id)}
                             >
                                 <h3>{seccion.titulo}</h3>
                                 <span>{seccionActiva === seccion.id ? "▲" : "▼"}</span>
                             </div>
                             {seccionActiva === seccion.id && (
-                                <div className="acordeon-contenido">
+                                <div className="acordeon-contenido-faqs">
                                     <p>{seccion.contenido}</p>
                                 </div>
                             )}

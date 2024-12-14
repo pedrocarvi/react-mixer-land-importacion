@@ -7,6 +7,7 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
+    color: white;
 }
 
 .faqs-title {
@@ -34,6 +35,19 @@
 
 .acordeon-contenido p {
     font-size: 16px;
+}
+
+.acordeon-header-faqs {
+    padding: 1em ;
+    display: flex;
+    justify-content: space-between;
+    background-color: #222222;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.acordeon-contenido-faqs {
+    font-size: 18px;
+    margin: 12px 20px;
 }
 
 @media screen and (max-width: 768px) {
