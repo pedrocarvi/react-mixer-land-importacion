@@ -63,7 +63,7 @@ const FormularioContacto = () => {
     <div className='form-contacto-ctn' id='form'>
       <div className='form-contacto-title'>
         <h3>
-          Compramos por vos y lo <br /> <span>importamos al mejor precio.</span>
+          Compramos por vos y lo <br /> <span>importamos al mejor precio </span>
         </h3>
         <p>
           Completá el formulario y ponete en contacto con un asesor para iniciar el proceso de cotización, importación y envío del producto que estás buscando.

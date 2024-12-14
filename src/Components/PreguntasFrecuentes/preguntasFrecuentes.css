@@ -24,6 +24,17 @@
     color: var(--dark-text-color);
 }
 
+.faqs-title span {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.faqs-title h3 {
+    font-size: 32px;
+}
+
 .faqs-acordeon {
     width: 700px;
     max-width: 700px;
@@ -59,4 +70,8 @@
         width: 100%;
         max-width: 500px;
     }
+
+    .faqs-title h3 {
+        font-size: 24px;
+    }    
 }

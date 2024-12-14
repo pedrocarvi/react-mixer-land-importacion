@@ -40,7 +40,7 @@ const CategoríasProductos = () => {
         <div className='categorias-productos-ctn' id='destacados'>
             <div className="categorias-productos-title">
                 <span>Categorías Destacadas</span>
-                <h2>Traemos lo que sea, sin importar el tamaño.</h2>
+                <h2 style={{textAlign: 'center'}}> Importamos cualquier tipo de producto, <br/>sin importar el volumen </h2>
             </div>
             <div className="categorias-productos-cards">
                 {categorias.map((categoria, index) => (
