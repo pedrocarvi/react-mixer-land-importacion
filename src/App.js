@@ -8,6 +8,7 @@ import Header from './Components/Header/Header';
 import HeroSection from './Components/Hero Section/HeroSection';
 import PreguntasFrecuentes from './Components/PreguntasFrecuentes/PreguntasFrecuentes';
 import VideoImportacion from './Components/VideoImportacion/VideoImportacion';
+import WhatsAppButton from './Components/WhatsappButton/WhatsappButton';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <GoogleReviews/>
       <PreguntasFrecuentes/>
       <Footer/>
+      <WhatsAppButton/>
     </div>
   );
 }
