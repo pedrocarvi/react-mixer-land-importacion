@@ -40,11 +40,13 @@
 .guia-importacion-ctn h2 {
     color: var(--dark-text-color);   
     font-size: 32px; 
+    text-align: start;
 }
 
 .guia-importacion-ctn p {
     font-size: 15px;
     color: var(--dark-text-color);
+    text-align: start;
 }
 
 .guia-importacion-ctn .guia-importacion-btns {
@@ -123,7 +125,19 @@
         flex-direction: column;
         gap: 30px;
         padding: 20px;
-        margin: 0px 0px;
+        margin: 30px 0px;
+    }
+    .guia-importacion-ctn .first-col,
+    .guia-importacion-ctn .second-col {
+        flex: 1;
+        width: 100%;
+    }
+    .guia-importacion-ctn h2 {
+        text-align: center;
+    }
+    .acordeon {
+        width: 100%;
+        margin: 0px;
     }
     .guia-importacion-ctn h2 {
        text-align: center;  
@@ -136,5 +150,11 @@
     .guia-importacion-ctn .guia-importacion-btns {
         display: flex;
         flex-direction: column;
+    }
+    .acordeon-header {
+        font-size: 16px;
+    }
+    .acordeon-header h3 {
+        font-size: 16px !important;
     }
 }
