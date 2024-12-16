@@ -4,6 +4,8 @@ import Footer from './Components/Footer/Footer';
 import FormularioContacto from './Components/FormularioContacto/FormularioContacto';
 import GoogleReviews from './Components/GoogleReviews/GoogleReviews';
 import GuiaImportacion from './Components/GuiaImportacion/GuiaImportacion';
+import GuiaImportacion2 from './Components/GuiaImportacionPrueba2/GuiaImportacionPrueba2';
+import GuiaImportacion3 from './Components/GuiaImportacionPrueba3/GuiaImportacionPrueba3';
 import Header from './Components/Header/Header';
 import HeroSection from './Components/Hero Section/HeroSection';
 import PreguntasFrecuentes from './Components/PreguntasFrecuentes/PreguntasFrecuentes';
@@ -18,6 +20,8 @@ function App() {
       <VideoImportacion/>
       <CategoríasProductos/>
       <GuiaImportacion/>
+      <GuiaImportacion2/>
+      <GuiaImportacion3/>
       <FormularioContacto/>
       <GoogleReviews/>
       <PreguntasFrecuentes/>

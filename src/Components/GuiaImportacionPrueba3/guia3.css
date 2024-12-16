@@ -1,0 +1,75 @@
+.guia-ctn-3 {
+    width: 100%;
+    margin: 0 auto;
+    background: 
+        radial-gradient(circle, rgba(0, 0, 0, 0.8) 60%, rgba(0, 0, 0, 1) 100%), 
+        url(../../assets/oficina2.jpg);
+    background-size: cover; 
+    background-position: center; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0px;
+    padding: 20px 0px;
+    min-height: 400px;
+    color: #fff;
+}
+
+.guia-importacion-ctn3 {
+    width: 100%;
+    max-width: 1200px;
+    display: flex; 
+    flex-direction: column;  
+    justify-content: center;
+    align-items: center; 
+    gap: 40px;
+    min-height: inherit;
+}
+
+.first-col3 {
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.first-col3 p, .first-col3 h2{
+    text-align: center;
+}
+
+.guia-importacion-btns3 {
+    margin-top: 10px;
+    display: flex;
+    gap: 16px;
+}
+
+.second-col3 {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+
+.guia-card {
+    width: 33.3%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .second-col3 {
+        flex-wrap: wrap;
+    }
+    .guia-card {
+        width: 100%;
+    }
+}
