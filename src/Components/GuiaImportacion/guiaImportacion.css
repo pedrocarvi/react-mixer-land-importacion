@@ -3,16 +3,17 @@
 .guia-ctn {
     width: 100%;
     margin: 0 auto;
-    background: 
+    /* background: 
         radial-gradient(circle, rgba(0, 0, 0, 0.8) 60%, rgba(0, 0, 0, 1) 100%), 
-        url(../../assets/oficina2.jpg);
+        url(../../assets/oficina.webp); */
+    background: url(../../assets/fondo_gradient.png);
     background-size: cover; 
     background-position: center; 
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 40px 0px;
-    min-height: 600px;
+    min-height: 650px;
     color: #fff;
 }
 
@@ -26,15 +27,31 @@
     min-height: inherit;
 }
 
-.guia-importacion-ctn .first-col,
+/* .guia-importacion-ctn .first-col,
 .guia-importacion-ctn .second-col {
     flex: 1;
-}
+} */
 
 .guia-importacion-ctn .first-col {
+    width: 40%;
     display: flex;
     flex-direction: column;
     gap: 12px;
+}
+
+.guia-importacion-ctn .second-col {
+    width: 60%;
+    border-radius: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    -webkit-box-shadow: 15px -4px 40px 0px rgba(219,219,219,0.1);
+    -moz-box-shadow: 15px -4px 40px 0px rgba(219,219,219,0.1);
+    box-shadow: 15px -4px 40px 0px rgba(219,219,219,0.1);
+}
+
+.first-col-span {
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: 300;
 }
 
 .guia-importacion-ctn h2 {
@@ -65,15 +82,14 @@
 .barra-vertical {
     position: absolute;
     top: 0;
-    left: 15px;
+    left: 30px;
     width: 2px;
     height: 100%;
     background: linear-gradient(to bottom, rgb(246, 230, 255), rgba(174, 22, 255, 1));
 }
 
-
 .acordeon-item {
-    position: relative;
+    position: relative; 
     margin: 1.5rem 0;
     cursor: pointer;
 }
@@ -88,25 +104,34 @@
     gap: 1rem;
     font-size: 1rem;
     padding: 0.8rem 1rem;
-    background-color: #222;
+    background-color: transparent; 
     border-radius: 5px;
-    transition: background-color 1s ease ease-in-out;
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    transition: background-color 1s ease-in-out;
+    color: #AC8CF0;
+    cursor: pointer;
+    position: relative; 
+    z-index: 1; 
 }
 
-.acordeon-header:hover {
-    background-color: #444;
+.acordeon-header h3 {
+    font-size: 20px;
+    font-weight: 400;
 }
+
+/* .acordeon-header:hover {
+    background-color: #444;
+} */
 
 .icono-placeholder {
     width: 30px;
     height: 30px;
     background-color: #555;
+    color: white;
+    font-size: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    font-size: 0.8rem;
 }
 
 .acordeon-contenido {
@@ -115,9 +140,10 @@
     font-size: 0.9rem;
     color: #bbb;
     line-height: 1.4;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 10px 15px;
 }
-
-
 
 @media screen and (max-width: 768px) {
     .guia-importacion-ctn {
@@ -133,6 +159,9 @@
         width: 100%;
     }
     .guia-importacion-ctn h2 {
+        text-align: center;
+    }
+    .first-col-span {
         text-align: center;
     }
     .acordeon {

@@ -20,8 +20,8 @@ function App() {
       <VideoImportacion/>
       <CategoríasProductos/>
       <GuiaImportacion/>
-      <GuiaImportacion2/>
-      <GuiaImportacion3/>
+      {/* <GuiaImportacion2/>
+      <GuiaImportacion3/> */}
       <FormularioContacto/>
       <GoogleReviews/>
       <PreguntasFrecuentes/>
