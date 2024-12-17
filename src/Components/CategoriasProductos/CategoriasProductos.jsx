@@ -7,6 +7,8 @@ import CatMaquinariaImg from '../../assets/cat-maquinaria-byn.webp';
 import CatPanelesImg from '../../assets/cat-paneles.webp';
 import CatPesasImg from '../../assets/cat-pesas.webp';
 import CatVigilancia from '../../assets/cat-vigilancia.webp';
+import CatMacbook from '../../assets/macbook_cat.png';
+import CatConstruct from '../../assets/construction_cat.png';
 
 const CategoríasProductos = () => {
     const [visibleCards, setVisibleCards] = useState([]);
@@ -28,8 +30,8 @@ const CategoríasProductos = () => {
 
     // Arreglo de categorías
     const categorias = [
-        { title: "Tecnología & Electrónica", bgImage: CatGamingImg },
-        { title: "Materiales de Construcción", bgImage: CatConstrucciónImg },
+        { title: "Tecnología & Electrónica", bgImage: CatMacbook },
+        { title: "Materiales de Construcción", bgImage: CatConstruct },
         { title: "Maquinaria Pesada", bgImage: CatMaquinariaImg },
         { title: "Paneles Solares", bgImage: CatPanelesImg },
         { title: "Pesas y Gimnasio", bgImage: CatPesasImg },
