@@ -81,11 +81,12 @@
 
 .barra-vertical {
     position: absolute;
-    top: 0;
     left: 30px;
+    top: 20px; 
+    bottom: 20px; 
     width: 2px;
-    height: 100%;
     background: linear-gradient(to bottom, rgb(246, 230, 255), rgba(174, 22, 255, 1));
+    z-index: 0;
 }
 
 .acordeon-item {
@@ -118,10 +119,6 @@
     font-weight: 400;
 }
 
-/* .acordeon-header:hover {
-    background-color: #444;
-} */
-
 .icono-placeholder {
     width: 30px;
     height: 30px;
@@ -134,15 +131,36 @@
     border-radius: 50%;
 }
 
+.icono-placeholder.active {
+    background-color: white;
+    color: black;
+}
+
 .acordeon-contenido {
     margin-left: 50px;
-    margin-top: 0.5rem;
     font-size: 0.9rem;
     color: #bbb;
     line-height: 1.4;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 20px;
+    padding: 0 15px; 
+    max-height: 0;
+    overflow: hidden;
+    visibility: hidden; 
+    transition: 
+        max-height 0.8s ease-in, 
+        padding 0.8s ease-in, 
+        visibility 0.8s ease-out; 
+}
+
+.acordeon-item.activo .acordeon-contenido {
+    max-height: 200px; 
     padding: 10px 15px;
+    visibility: visible; 
+    transition: 
+        max-height 0.5s ease-out, 
+        padding 0.5s ease-out, 
+        visibility 0.5s ease-out;
 }
 
 @media screen and (max-width: 768px) {
