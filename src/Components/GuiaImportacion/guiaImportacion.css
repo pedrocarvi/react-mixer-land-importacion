@@ -122,7 +122,7 @@
 .icono-placeholder {
     width: 30px;
     height: 30px;
-    background-color: #555;
+    background-color: #3b3b3b;
     color: white;
     font-size: 20px;
     display: flex;
@@ -132,10 +132,22 @@
 }
 
 .icono-placeholder.active {
-    background-color: white;
-    color: black;
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border: 1px solid #AC8CF0;
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    left: -4px;
 }
 
+.acordeon-titulo.active {
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+}
 .acordeon-contenido {
     margin-left: 50px;
     font-size: 0.9rem;
@@ -143,24 +155,24 @@
     line-height: 1.4;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 20px;
-    padding: 0 15px; 
-    max-height: 0;
+    padding: 0px 15px; 
     overflow: hidden;
     visibility: hidden; 
     transition: 
-        max-height 0.8s ease-in, 
-        padding 0.8s ease-in, 
-        visibility 0.8s ease-out; 
+        height 0.6s cubic-bezier(0.25, 0.8, 0.25, 1), 
+        padding 0.6s cubic-bezier(0.25, 0.8, 0.25, 1), 
+        visibility 0.6s cubic-bezier(0.25, 0.8, 0.25, 1); 
+    height: 0;
 }
 
 .acordeon-item.activo .acordeon-contenido {
-    max-height: 200px; 
-    padding: 10px 15px;
     visibility: visible; 
+    height: auto;
+    padding: 0px 15px;
     transition: 
-        max-height 0.5s ease-out, 
-        padding 0.5s ease-out, 
-        visibility 0.5s ease-out;
+        height 0.6s cubic-bezier(0.25, 0.8, 0.25, 1), 
+        padding 0.6s cubic-bezier(0.25, 0.8, 0.25, 1), 
+        visibility 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 @media screen and (max-width: 768px) {
