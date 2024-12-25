@@ -25,39 +25,38 @@ const FormularioContacto = () => {
     };
 
     const handleSubmit = async (e) => {
-
-        e.preventDefault(); 
-
+        e.preventDefault();
+    
         try {
-        // const response = await fetch('https://tu-endpoint.com/api/formulario', {
-        //     method: 'POST',
-        //     headers: {
-        //     'Content-Type': 'application/json',
-        //     },
-        //     body: JSON.stringify(formData),
-        // });
-
-        console.log("formData a enviar: ", formData);
-
-        // if (response.ok) {
-            setFormData({
-            nombreCompleto: '',
-            correoElectronico: '',
-            celularWhatsapp: '',
-            rubroNegocio: '',
-            nombreNegocio: '',
-            paisImportar: 'Seleccioná tu país',
-            productosImportar: '',
-            consultaEspecifica: '',
+            const response = await fetch('https://api-mixerport.vercel.app/contacto-importacion', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
             });
-        // } else {
-        //     alert('Hubo un error al enviar el formulario.');
-        // }
+    
+            if (response.ok) {
+                alert('Mensaje enviado con éxito');
+                setFormData({
+                    nombreCompleto: '',
+                    correoElectronico: '',
+                    celularWhatsapp: '',
+                    rubroNegocio: '',
+                    nombreNegocio: '',
+                    paisImportar: 'Seleccioná tu país',
+                    productosImportar: '',
+                    consultaEspecifica: '',
+                });
+            } else {
+                alert('Hubo un error al enviar el mensaje.');
+            }
         } catch (error) {
-        console.error('Error al enviar el formulario:', error);
-        alert('Ocurrió un error inesperado.');
+            console.error('Error:', error);
+            alert('Error al conectar con el servidor.');
         }
     };
+    
 
   return (
     <div className='form-contacto-ctn' id='form'>

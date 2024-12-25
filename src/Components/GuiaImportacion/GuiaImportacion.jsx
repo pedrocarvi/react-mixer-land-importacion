@@ -13,7 +13,8 @@ const GuiaImportacion = () => {
         { id: 6, titulo: "Acompañamiento y entrega", contenido: "Te mantenemos informado hasta que recibas tu mercancía de forma segura." },
     ];
 
-    const [seccionActiva, setSeccionActiva] = useState(null);
+    // Inicializa la primera sección como activa
+    const [seccionActiva, setSeccionActiva] = useState(1);
 
     const refs = useRef([]);
 
