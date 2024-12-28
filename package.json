@@ -1,5 +1,6 @@
 {
   "name": "react-mixer-land-importacion",
+  "homepage": "https://mixerport.com/empresas/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
